@@ -1,0 +1,38 @@
+[
+    {
+        "title": "Wargaming Manager",
+        "imageUrl": "https://source.unsplash.com/random/300x200",
+        "language": "JavaScript, React, Express, Node.js, PostgreSQL",
+        "link": "https://tenor2000.github.io/restaurant-page/",
+        "codelink": "https://github.com/tenor2000/restaurant-page",
+        "favor": false,
+        "description": "A warband and campaign currently developed using Frostgrave second edition, with additianl expansion to other tabletop wargames. Built using components from Material UI, it features a full database, and a full API. The project is currently in development, and will be released in the near future."
+      },
+    {
+      "title": "Restaurant Page",
+      "imageUrl": "https://source.unsplash.com/random/300x200",
+      "language": "HTML, JavaScript, CSS",
+      "link": "https://tenor2000.github.io/restaurant-page/",
+      "codelink": "https://github.com/tenor2000/restaurant-page",
+      "favor": false,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    {
+      "title": "Calculator",
+      "imageUrl": "https://source.unsplash.com/random/300x200",
+      "language": "HTML, JavaScript, CSS",
+      "link": "https://tenor2000.github.io/calculator-js/",
+      "codelink": "https://github.com/tenor2000/calculator-js",
+      "favor": false,
+      "description": "The Simple Calculator app is a basic calculator designed to perform arithmetic operations such as addition, subtraction, multiplication, and division. It provides a user-friendly interface with a keypad for input and a display area to show the input expression and result. The calculator supports both keyboard and mouse input, allowing users to interact with it conveniently."
+    },
+    {
+      "title": "Etch-a-Sketch",
+      "imageUrl": "https://source.unsplash.com/random/300x200",
+      "language": "HTML, JavaScript, CSS",
+      "link": "https://tenor2000.github.io/etch-a-sketch/",
+      "codelink": "https://github.com/tenor2000/etch-a-sketch",
+      "favor": false,
+      "description": "The Etch-a-Sketch app is a dynamic drawing tool created using JavaScript and CSS. Users can draw on a grid by clicking and dragging their mouse over the tiles, changing the background color as they go. The app includes features like resizing the grid, clearing the drawing area, and selecting different colors from a palette. Through building this project, I gained hands-on experience in event handling, DOM manipulation, and CSS styling, enhancing my skills in web development and interactive design."
+    }
+  ]
