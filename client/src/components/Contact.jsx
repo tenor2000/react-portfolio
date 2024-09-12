@@ -14,18 +14,18 @@ const ContactModal = () => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        // Handle form submission (e.g., send data to your backend or an email service)
+        // Handle form submission here
         handleClose();
     };
 
     return (
         <>
-            <Box sx={{ display: 'flex', height: '100vh', alignItems: 'center', justifyContent: 'center', mt: 5 }}>        
-                <Button variant="outlined" color="primary" onClick={handleClickOpen}>
+            <Box sx={{ display: 'flex', height: '100vh', alignItems: 'center', justifyContent: 'center', mt: 5 }}>     
+                <Button variant="outlined" color="primary" onClick={handleClickOpen} sx={{ backgroundColor: 'rgba(0, 0, 0, 0.7)' }}>
                     Contact Me
                 </Button>
             </Box>
-            <Dialog open={open} onClose={handleClose}>
+            <Dialog open={open} onClose={handleClose} >
                 <DialogTitle>Contact Me</DialogTitle>
                 <DialogContent>
                     <Typography variant="body1" color="textSecondary" align="center" gutterBottom>
@@ -39,41 +39,41 @@ const ContactModal = () => {
                         autoComplete="off"
                     >
                         <TextField
-                        fullWidth
-                        required
-                        id="name"
-                        label="Name"
-                        variant="outlined"
-                        margin="normal"
-                    />
-                    <TextField
-                        fullWidth
-                        required
-                        id="email"
-                        label="Email"
-                        type="email"
-                        variant="outlined"
-                        margin="normal"
-                    />
-                    <TextField
-                        fullWidth
-                        required
-                        id="message"
-                        label="Message"
-                        multiline
-                        rows={4}
-                        variant="outlined"
-                        margin="normal"
-                    />  
-                    <DialogActions>
-                    <Button onClick={handleClose} color="secondary">
-                        Cancel
-                    </Button>
-                    <Button type="submit" variant="contained" color="primary">
-                        Send Message
-                    </Button>
-                    </DialogActions>
-                </Box>
+                            fullWidth
+                            required
+                            id="name"
+                            label="Name"
+                            variant="outlined"
+                            margin="normal"
+                        />
+                        <TextField
+                            fullWidth
+                            required
+                            id="email"
+                            label="Email"
+                            type="email"
+                            variant="outlined"
+                            margin="normal"
+                        />
+                        <TextField
+                            fullWidth
+                            required
+                            id="message"
+                            label="Message"
+                            multiline
+                            rows={4}
+                            variant="outlined"
+                            margin="normal"
+                        />  
+                        <DialogActions>
+                            <Button onClick={handleClose} color="secondary">
+                                Cancel
+                            </Button>
+                            <Button type="submit" variant="contained" color="primary">
+                                Send Message
+                            </Button>
+                        </DialogActions>
+                    </Box>
                 </DialogContent>
             </Dialog>
         </>

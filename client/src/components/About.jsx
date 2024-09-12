@@ -20,11 +20,11 @@ const About = () => {
                 <Avatar
                     alt="Your Name"
                     src="https://source.unsplash.com/random/200x200"
-                    sx={{ width: 200, height: 200, margin: '0 auto' }}
+                    sx={{ width: 200, height: 200, margin: '0 auto', backgroundColor: 'rgba(0, 0, 0, 0.7)' }}
                 />
             </Grid>
             <Grid item xs={12} md={8}>
-                <Paper elevation={3} sx={{ padding: '20px' }}>
+                <Paper elevation={3} sx={{ padding: '20px', backgroundColor: 'rgba(0, 0, 0, 0.7)', color: 'white' }}>
                     <Typography variant="h4" component="h2" gutterBottom>
                         About Me
                     </Typography>

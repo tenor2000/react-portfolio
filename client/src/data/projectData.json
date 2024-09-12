@@ -2,12 +2,12 @@
     {
         "title": "Wargaming Manager",
         "imageUrl": "https://source.unsplash.com/random/300x200",
-        "language": "JavaScript, React, Express, Node.js, PostgreSQL",
+        "language": "React, JavaScript, Express, Node.js, PostgreSQL",
         "link": "https://tenor2000.github.io/restaurant-page/",
-        "codelink": "https://github.com/tenor2000/restaurant-page",
+        "codelink": "https://github.com/tenor2000/wargames-manager",
         "favor": false,
         "description": "A warband and campaign currently developed using Frostgrave second edition, with additianl expansion to other tabletop wargames. Built using components from Material UI, it features a full database, and a full API. The project is currently in development, and will be released in the near future."
-      },
+    },
     {
       "title": "Restaurant Page",
       "imageUrl": "https://source.unsplash.com/random/300x200",
@@ -18,17 +18,26 @@
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     },
     {
-      "title": "Calculator",
+      "title": "Memory Card Game",
+      "imageUrl": "https://source.unsplash.com/random/300x200",
+      "language": "React, JavaScript, CSS",
+      "link": "https://tenor2000.github.io/memory-cardgame/",
+      "codelink": "https://github.com/tenor2000/memory-cardgame",
+      "favor": false,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    {
+      "title": "Library App",
       "imageUrl": "https://source.unsplash.com/random/300x200",
       "language": "HTML, JavaScript, CSS",
-      "link": "https://tenor2000.github.io/calculator-js/",
-      "codelink": "https://github.com/tenor2000/calculator-js",
+      "link": "https://tenor2000.github.io/library-app-js/",
+      "codelink": "https://github.com/tenor2000/library-app-js",
       "favor": false,
-      "description": "The Simple Calculator app is a basic calculator designed to perform arithmetic operations such as addition, subtraction, multiplication, and division. It provides a user-friendly interface with a keypad for input and a display area to show the input expression and result. The calculator supports both keyboard and mouse input, allowing users to interact with it conveniently."
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     },
     {
       "title": "Etch-a-Sketch",
-      "imageUrl": "https://source.unsplash.com/random/300x200",
+      "imageUrl": "/src/assets/etch.png",
       "language": "HTML, JavaScript, CSS",
       "link": "https://tenor2000.github.io/etch-a-sketch/",
       "codelink": "https://github.com/tenor2000/etch-a-sketch",
