@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Button, Typography, useMediaQuery } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import ProjectCard from './ProjectCard';
 import projects from '../data/projectData.json';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -8,17 +8,8 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
-import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
-import '../styles/projects-style.css'
 
 const Projects = () => {
-    const minWidth = useMediaQuery('(max-width:600px)');
-    const medWidth = useMediaQuery('(min-width:601px) and (max-width:1200px)');
-    const maxWidth = useMediaQuery('(min-width:1201px)');
-
-    const itemsToShow = minWidth ? 1 : medWidth ? 2 : maxWidth ? 3 : 0;
-
     return (
         <Box
             sx={{
@@ -49,17 +40,28 @@ const Projects = () => {
             <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', maxWidth: '1200px', width: '100%', overflow: 'hidden' }}>
                 <Swiper
                     modules={[Navigation, Pagination, Scrollbar, A11y]}
-                    spaceBetween={0}
-                    slidesPerView={itemsToShow}
-                    centeredSlides={true}
+                    spaceBetween={20}
+                    centeredSlides={false}
                     loop={true}
                     navigation
                     pagination={{ clickable: true }}
                     scrollbar={{ draggable: true }}
-                    onSwiper={(swiper) => console.log(swiper)}
-                    onSlideChange={() => console.log('slide change')}
+                    breakpoints={{ 
+                        0: {
+                            slidesPerView: 1,
+                            spaceBetween: 10,
+                        },
+                        701: {
+                            slidesPerView: 2,
+                            spaceBetween: 20,
+                        },
+                        1101: {
+                            slidesPerView: 3,
+                            spaceBetween: 30,
+                        },
+                    }}
                     style={{ display: 'flex', width: '100%', maxWidth: '1200px', overflow: 'hidden', paddingBottom: '50px'}}
-
+                    
                 >
                     {projects.map((project, index) => (
                         <SwiperSlide key={index} style={{ display: 'flex', justifyContent: 'center' }} >

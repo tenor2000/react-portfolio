@@ -15,7 +15,11 @@ function ProjectCard({ project }) {
                 backgroundColor: 'rgba(0, 0, 0, 0.7)',
                 color: 'white',
                 borderRadius: '10px',
-                boxShadow: '0 0 10px rgba(0, 0, 0, 0.5)'
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'space-between',
+                alignItems: 'center',
+                cursor: 'grab',
             }}
         >
             <CardMedia
@@ -24,18 +28,19 @@ function ProjectCard({ project }) {
                 image={project.imageUrl}
                 alt={project.title}
             />
-            <Typography variant="h5" component="div" sx={{ textAlign: 'center' }}>
-                {project.title}
-            </Typography>
-            <CardContent sx={{ textAlign: 'center', height: height * 0.3, overflow: 'auto'  }}>
-                <Typography variant="body2" color="primary">
-                    {project.description}
+            <CardContent sx={{ flex: 1, textAlign: 'center', display: 'flex', flexDirection: 'column', justifyContent: 'flex-start', overflow: 'hidden', pb: 1 }}>
+                <Typography variant="h5" component="div" color="primary" fontWeight={'bold'}>
+                    {project.title}
                 </Typography>
-                <Typography variant="body2" color="primary">
+                <Typography variant="body2" color="primary" sx={{mb: 1}}>
                     <b>{project.language}</b>
                 </Typography>
+                <Typography variant="body2" color="white" sx={{ flexGrow: 1, overflowY: 'auto', padding: '0 8px' }}>
+                    {project.description}
+                </Typography>
             </CardContent>
-            <Box sx={{ display: 'flex', justifyContent: 'center', pb: 2, gap: 2, mt: 2 }}>
+            
+            <Box sx={{ display: 'flex', justifyContent: 'center', pb:1, gap: 2, mt: 1,  }}>
                 <Button 
                     component="a" 
                     size="small" 

@@ -6,22 +6,21 @@ const Footer = () => {
     <Box 
         component="footer"
         sx={{ 
-            backgroundColor: '#242424', 
+            backgroundColor: 'rgba(0, 0, 0, 0.5)', 
             color: '#fff', 
             padding: '10px', 
             textAlign: 'center', 
             bottom: 0,
-            width: '100%',
         }}
     >
         <Typography variant="body2">
             Background Image credit to{' '}
             <Link href="https://backiee.com/wallpaper/space/246787" color="inherit" target="_blank" rel="noopener">
-            Jeremiah
+                Jeremiah
             </Link>{' '}
-            on{' '}
+                on{' '}
             <Link href="https://backiee.com/" color="inherit" target="_blank" rel="noopener">
-            backiee.com
+                backiee.com
             </Link>.
         </Typography>
         <Typography variant="body2" sx={{ marginTop: '10px' }}>
