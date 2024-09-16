@@ -1,5 +1,8 @@
 import React from 'react';
-import { Box, Typography, Card, CardContent, CardMedia, Button, useMediaQuery } from '@mui/material';
+import { Box, Typography, Card, CardContent, CardMedia, Button, useMediaQuery, IconButton } from '@mui/material';
+import gitHubIcon from '../assets/github-mark.svg';
+import newTabIcon from '../assets/new-tab-svgrepo-com.svg';
+
 
 function ProjectCard({ project }) {
     const isMobile = useMediaQuery('(max-height: 600px)');
@@ -12,7 +15,9 @@ function ProjectCard({ project }) {
         <Card sx={{ 
                 maxWidth: width,
                 maxHeight: height,
-                backgroundColor: 'rgba(0, 0, 0, 0.7)',
+                backgroundColor: 'rgba(0, 0, 0, 0.5)',
+                '&:hover': { backgroundColor: 'rgba(0, 0, 0, 0.7)' },
+                transition: 'background-color 0.3s ease',
                 color: 'white',
                 borderRadius: '10px',
                 display: 'flex',
@@ -35,7 +40,7 @@ function ProjectCard({ project }) {
                 <Typography variant="body2" color="primary" sx={{mb: 1}}>
                     <b>{project.language}</b>
                 </Typography>
-                <Typography variant="body2" color="white" sx={{ flexGrow: 1, overflowY: 'auto', padding: '0 8px' }}>
+                <Typography variant="body2" color="skyblue" sx={{ flexGrow: 1, overflowY: 'auto', padding: '0 8px' }}>
                     {project.description}
                 </Typography>
             </CardContent>
@@ -44,22 +49,26 @@ function ProjectCard({ project }) {
                 <Button 
                     component="a" 
                     size="small" 
-                    variant="contained" 
+                    variant="outlined" 
                     color="primary" 
                     href={project.link} 
                     target="_blank"
+                    startIcon={
+                        <img src={newTabIcon} alt="New Tab" style={{ width: 24, height: 24 }} />
+                    }
                 >
-                    Live Demo
+                    Demo
                 </Button>
                 <Button    
                     component="a" 
                     size="small" 
-                    variant="contained" 
+                    variant="outlined" 
                     color="primary" 
                     href={project.codelink} 
                     target="_blank"
+                    startIcon={<img src={gitHubIcon} alt="GitHub" style={{ width: 24, height: 24 }} />}
                 >
-                    Code
+                    GitHub
                 </Button>
             </Box>
         </Card>
