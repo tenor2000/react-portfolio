@@ -12,6 +12,7 @@ import 'swiper/css/scrollbar';
 const Projects = () => {
     return (
         <Box
+            className="animation-scroll"
             sx={{
                 display: 'flex',
                 flexDirection: 'column',
@@ -39,13 +40,13 @@ const Projects = () => {
             </Box>
             <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', maxWidth: '1200px', width: '100%', overflow: 'hidden' }}>
                 <Swiper
-                    modules={[Navigation, Pagination, Scrollbar, A11y]}
+                    modules={[Navigation, Pagination, A11y]}
                     spaceBetween={20}
                     centeredSlides={false}
                     loop={true}
                     navigation
                     pagination={{ clickable: true }}
-                    scrollbar={{ draggable: true }}
+
                     breakpoints={{ 
                         0: {
                             slidesPerView: 1,

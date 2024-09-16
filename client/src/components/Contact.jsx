@@ -20,23 +20,41 @@ const ContactModal = () => {
 
     return (
         <>
-            <Box sx={{ display: 'flex', height: '100vh', alignItems: 'center', justifyContent: 'center', mt: 5 }}>     
-                <Button variant="outlined" color="primary" onClick={handleClickOpen} sx={{ backgroundColor: 'rgba(0, 0, 0, 0.7)' }}>
+            <Box 
+                className="animation-scroll" 
+                sx={{ display: 'flex', height: '100vh', alignItems: 'center', justifyContent: 'center', mt: 5 }}
+            >     
+                <Button 
+                    variant="outlined" 
+                    color="primary" 
+                    onClick={handleClickOpen} 
+                    sx={{ backgroundColor: 'rgba(0, 0, 0, 0.5)', '&:hover': { backgroundColor: 'rgba(0, 0, 0, 0.7)' } }}
+                >
                     Contact Me
                 </Button>
             </Box>
-            <Dialog open={open} onClose={handleClose} >
-                <DialogTitle>Contact Me</DialogTitle>
-                <DialogContent>
-                    <Typography variant="body1" color="textSecondary" align="center" gutterBottom>
+            <Dialog 
+                open={open} 
+                onClose={handleClose} 
+                PaperProps={{ 
+                    sx: { 
+                        backgroundColor: 'rgba(0, 0, 0, 0.8)',
+                        color: 'primary.main',
+                     } 
+                }}
+            >
+                <DialogTitle color="Primary">Contact Me</DialogTitle>
+                <DialogContent >
+                    <Typography variant="body1" color="primary" align="center" gutterBottom>
                         Feel free to reach out for any inquiries or collaborations!
                     </Typography>
                     <Box
                         component="form"
                         onSubmit={handleSubmit}
-                        sx={{ mt: '1rem' }}
+                        sx={{ mt: '1rem', borderColor: 'primary.main' }}
                         noValidate
                         autoComplete="off"
+
                     >
                         <TextField
                             fullWidth
@@ -66,10 +84,11 @@ const ContactModal = () => {
                             margin="normal"
                         />  
                         <DialogActions>
-                            <Button onClick={handleClose} color="secondary">
+                            <Button 
+                                variant="outlined" onClick={handleClose} color="secondary">
                                 Cancel
                             </Button>
-                            <Button type="submit" variant="contained" color="primary">
+                            <Button type="submit" variant="outlined" color="primary">
                                 Send Message
                             </Button>
                         </DialogActions>
