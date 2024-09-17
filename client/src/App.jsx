@@ -1,20 +1,54 @@
 import { useState } from 'react'
 import { Element } from 'react-scroll'
+import TextField from '@mui/material/TextField'
 import Header from './components/Header'
 import Hero from './components/Hero'
+import TechStack from './components/TechStack'
 import Projects from './components/Projects'
 import About from './components/About'
 import Resume from './components/Resume'
 import ContactModal from './components/Contact';
 import Footer from './components/Footer'
-import './styles/App.css'
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+
+const theme = createTheme({
+  components: {
+    MuiTextField: {
+      styleOverrides: {
+        root: {
+          '& .MuiOutlinedInput-root': {
+            color: 'primary',  
+            '& .MuiOutlinedInput-notchedOutline': {
+              borderColor: 'gray', 
+            },
+            '&:hover .MuiOutlinedInput-notchedOutline': {
+              borderColor: 'lightgray',
+            },
+            '&.Mui-focused .MuiOutlinedInput-notchedOutline': {
+              borderColor: 'gray',
+            },
+          },
+          '& .MuiInputLabel-root': {
+            color: 'white',
+            '&.Mui-focused': {
+              color: 'white'
+            },
+          },
+        },
+      },
+    },
+  },
+});
 
 function App() {
   return (
-    <>
+    <ThemeProvider theme={theme}>
       <Header/>
       <Element name="Home" >
         <Hero/>
+      </Element>
+      <Element name="TechStack" >
+        <TechStack/>
       </Element>
       <Element name="Projects" >
         <Projects/>
@@ -29,7 +63,7 @@ function App() {
         <ContactModal/>
       </Element>
       <Footer />
-    </>
+    </ThemeProvider>
   )
 }
 

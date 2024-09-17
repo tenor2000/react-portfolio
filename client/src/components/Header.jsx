@@ -8,17 +8,13 @@ import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 
 const Header = () => {
     const [anchorElNav, setAnchorElNav] = useState(null);
-    const [anchorElUser, setAnchorElUser] = useState(null);
 
-    const pages = ['Projects', 'About', 'Resume', 'Contact', 'Blog'];
-    const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+    const pages = ['TechStack', 'Projects', 'About', 'Resume', 'Contact', 'Blog'];
   
     const handleOpenNavMenu = (event) => {
       setAnchorElNav(event.currentTarget);
