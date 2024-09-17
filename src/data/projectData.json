@@ -2,11 +2,11 @@
     {
         "title": "Wargaming Manager",
         "imageUrl": "https://source.unsplash.com/random/300x200",
-        "language": "React, JavaScript, Express, Node.js, PostgreSQL",
+        "language": "PostgreSQL, Express, React, Node.js",
         "link": "https://tenor2000.github.io/restaurant-page/",
         "codelink": "https://github.com/tenor2000/wargames-manager",
         "favor": false,
-        "description": "A warband and campaign currently developed using Frostgrave second edition, with additianl expansion to other tabletop wargames. Built using components from Material UI, it features a full database, and a full API. The project is currently in development, and will be released in the near future."
+        "description": "A warband and campaign currently developed using Frostgrave second edition, with additional expansion to other tabletop wargames. Built using components from Material UI, it features a full database, and a full API. The project is currently in development, and will be released in the near future."
     },
     {
       "title": "Restaurant Page",

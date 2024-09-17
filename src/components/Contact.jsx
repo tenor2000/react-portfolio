@@ -37,10 +37,12 @@ const ContactModal = () => {
                 open={open} 
                 onClose={handleClose} 
                 PaperProps={{ 
-                    sx: { 
-                        backgroundColor: 'rgba(0, 0, 0, 0.8)',
-                        color: 'primary.main',
-                     } 
+
+                        sx: { 
+                            backgroundColor: 'rgba(0, 0, 0, 0.8)',
+                            color: 'primary.main',
+                        } 
+
                 }}
             >
                 <DialogTitle color="Primary">Contact Me</DialogTitle>

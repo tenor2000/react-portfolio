@@ -8,3 +8,10 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
 npm install --save react-awesome-slider
+Installations
+npm install node
+npm install 
+npm install @mui/icons-material
+npm install @mui/material @emotion/react @emotion/styled
+npm install react-scroll
+npm install react-scroll-parallax

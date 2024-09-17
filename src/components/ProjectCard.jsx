@@ -12,7 +12,8 @@ function ProjectCard({ project }) {
 
 
     return (
-        <Card sx={{ 
+        <Card 
+            sx={{ 
                 maxWidth: width,
                 maxHeight: height,
                 backgroundColor: 'rgba(0, 0, 0, 0.5)',

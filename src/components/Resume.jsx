@@ -3,7 +3,8 @@ import { Box, Typography } from '@mui/material';
 
 const Resume = () => {
     return (
-        <Box 
+        <Box
+            className="animation-scroll"
             sx={{ 
                 textAlign: 'center', 
                 display: 'flex',

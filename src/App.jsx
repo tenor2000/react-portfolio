@@ -47,7 +47,7 @@ function App() {
       <Element name="Home" >
         <Hero/>
       </Element>
-      <Element name="TechStack" >
+      <Element name="DevStack" >
         <TechStack/>
       </Element>
       <Element name="Projects" >

@@ -1,8 +1,8 @@
 import React from 'react';
-import { Box, Typography } from '@mui/material';
+import { Box, Paper, Typography } from '@mui/material';
 
 const techIcons = [
-    'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg',
+    'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg',
     'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg',
     'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg',
     'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg',
@@ -41,7 +41,7 @@ const TechStack = () => {
                 }}
             >
                 <Typography variant="h4" component="h2" textAlign="center" >
-                    My Tech Stack
+                    Development Stack
                 </Typography>
             </Box>
             <Box 
@@ -57,27 +57,46 @@ const TechStack = () => {
             >
                 
                 {techIcons.map((icon, index) => (
-                    <Box
+                    <Paper
                         key={index}
                         sx={{
-                            width: '100px',
-                            height: '100px',
+                            backgroundColor: '#f5f5f5',
+                            borderRadius: '10px',
+
                             display: 'flex',
                             alignItems: 'center',
                             justifyContent: 'center',
-                            '& img': {
-                                width: '100%',
-                                height: '100%',
-                                objectFit: 'contain',
-                                transition: 'transform 0.3s ease',
-                                '&:hover': {
-                                    transform: 'scale(1.2)',
-                                },
+                            transition: 'background-color 0.3s ease',
+                            '&:hover': {
+                                backgroundColor: 'primary.main',
+                                transition: 'background-color 0.3s ease',
+                                
                             },
                         }}
                     >
-                        <img src={icon} alt={`Tech Icon ${index + 1}`} />
-                    </Box>
+                        <Box
+                            tooltip={`Tech Icon ${index + 1}`}
+                            sx={{
+                                width: '100px',
+                                height: '100px',
+                                margin: '15px',
+                                display: 'flex',
+                                alignItems: 'center',
+                                justifyContent: 'center',
+                                '& img': {
+                                    width: '100%',
+                                    height: '100%',
+                                    objectFit: 'contain',
+                                    transition: 'transform 0.3s ease',
+                                    '&:hover': {
+                                        transform: 'scale(1.1)',
+                                    },
+                                },
+                            }}
+                        >
+                            <img src={icon} alt={`Tech Icon ${index + 1}`} />
+                        </Box>
+                    </Paper>
                 ))}
 
             </Box>

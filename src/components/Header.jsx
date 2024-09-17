@@ -14,7 +14,7 @@ import MenuItem from '@mui/material/MenuItem';
 const Header = () => {
     const [anchorElNav, setAnchorElNav] = useState(null);
 
-    const pages = ['TechStack', 'Projects', 'About', 'Resume', 'Contact', 'Blog'];
+    const pages = ['DevStack', 'Projects', 'About', 'Resume', 'Contact', 'Blog'];
   
     const handleOpenNavMenu = (event) => {
       setAnchorElNav(event.currentTarget);
@@ -53,7 +53,7 @@ const Header = () => {
                 <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
                     <IconButton
                         size="large"
-                        aria-label="account of current user"
+                        aria-label="navigation menu"
                         aria-controls="menu-appbar"
                         aria-haspopup="true"
                         onClick={handleOpenNavMenu}
@@ -77,6 +77,15 @@ const Header = () => {
                         onClose={handleCloseNavMenu}
                         sx={{
                             display: { xs: 'block', md: 'none' },
+                            
+                        }}
+                        slotProps={{ 
+                            paper: {
+                                sx: { 
+                                backgroundColor: 'rgba(0, 0, 0, 0.8)',
+                                color: 'primary.main',
+                                } 
+                            }
                         }}
                     >
                         {pages.map((page) => (

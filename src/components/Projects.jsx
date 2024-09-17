@@ -35,7 +35,7 @@ const Projects = () => {
                 }}
             >
                 <Typography variant="h4" component="h2" textAlign="center" >
-                    My Projects
+                    Featured Projects
                 </Typography>
             </Box>
             <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', maxWidth: '1200px', width: '100%', overflow: 'hidden' }}>
@@ -46,7 +46,6 @@ const Projects = () => {
                     loop={true}
                     navigation
                     pagination={{ clickable: true }}
-
                     breakpoints={{ 
                         0: {
                             slidesPerView: 1,
