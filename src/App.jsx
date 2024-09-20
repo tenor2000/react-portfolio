@@ -17,7 +17,7 @@ const theme = createTheme({
       styleOverrides: {
         root: {
           '& .MuiOutlinedInput-root': {
-            color: 'primary',  
+            color: 'white',  
             '& .MuiOutlinedInput-notchedOutline': {
               borderColor: 'gray', 
             },

@@ -14,10 +14,10 @@ function ProjectCard({ project }) {
     return (
         <Card 
             sx={{ 
-                maxWidth: width,
-                maxHeight: height,
+                width: width,
+                height: height,
                 backgroundColor: 'rgba(0, 0, 0, 0.5)',
-                '&:hover': { backgroundColor: 'rgba(0, 0, 0, 0.7)' },
+                '&:hover': { backgroundColor: 'rgba(0, 0, 0, 0.3)' },
                 transition: 'background-color 0.3s ease',
                 color: 'white',
                 borderRadius: '10px',
@@ -52,11 +52,13 @@ function ProjectCard({ project }) {
                     size="small" 
                     variant="outlined" 
                     color="primary" 
-                    href={project.link} 
+                    href={project.link || '#'}
+                    disabled={!project.link}
                     target="_blank"
                     startIcon={
-                        <img src={newTabIcon} alt="New Tab" style={{ width: 24, height: 24 }} />
+                        <img src={newTabIcon} alt="New Tab" style={{ width: 24, height: 24, filter: !project.link ? 'grayscale(100%) brightness(50%)' : 'none' }} />
                     }
+                    
                 >
                     Demo
                 </Button>
@@ -65,9 +67,10 @@ function ProjectCard({ project }) {
                     size="small" 
                     variant="outlined" 
                     color="primary" 
-                    href={project.codelink} 
+                    href={project.codelink || '#'}
+                    disabled={!project.codelink}
                     target="_blank"
-                    startIcon={<img src={gitHubIcon} alt="GitHub" style={{ width: 24, height: 24 }} />}
+                    startIcon={<img src={gitHubIcon} alt="GitHub" style={{ width: 24, height: 24, filter: !project.codelink ? 'grayscale(100%) brightness(50%)' : 'none' }} />}
                 >
                     GitHub
                 </Button>

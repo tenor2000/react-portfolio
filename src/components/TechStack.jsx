@@ -60,7 +60,7 @@ const TechStack = () => {
                     <Paper
                         key={index}
                         sx={{
-                            backgroundColor: '#f5f5f5',
+                            backgroundColor: 'primary.main',
                             borderRadius: '10px',
 
                             display: 'flex',
@@ -68,7 +68,7 @@ const TechStack = () => {
                             justifyContent: 'center',
                             transition: 'background-color 0.3s ease',
                             '&:hover': {
-                                backgroundColor: 'primary.main',
+                                backgroundColor: '#f5f5f5',
                                 transition: 'background-color 0.3s ease',
                                 
                             },
