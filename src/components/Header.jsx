@@ -26,7 +26,7 @@ const Header = () => {
 
   
     return (
-      <AppBar position="fixed" >
+      <AppBar position="fixed" sx={{ backgroundColor: 'rgba(0, 0, 0, 0.9)'}}>
         <Container maxWidth="lg">
             <Toolbar disableGutters>
                 <Box sx={{ display: { xs: 'none', md: 'flex' }, mr: 2, img: { height: 30, width: 'auto'}}}>
