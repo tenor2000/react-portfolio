@@ -1,7 +1,5 @@
 import React from 'react';
 import { Box, Typography, Card, CardContent, CardMedia, Button, useMediaQuery, IconButton } from '@mui/material';
-import gitHubIcon from '../assets/github-mark.svg';
-import newTabIcon from '../assets/new-tab-svgrepo-com.svg';
 
 
 function ProjectCard({ project }) {
@@ -56,7 +54,7 @@ function ProjectCard({ project }) {
                     disabled={!project.link}
                     target="_blank"
                     startIcon={
-                        <img src={newTabIcon} alt="New Tab" style={{ width: 24, height: 24, filter: !project.link ? 'grayscale(100%) brightness(50%)' : 'none' }} />
+                        <img src={'/assets/new-tab-svgrepo-com.svg'} alt="New Tab" style={{ width: 24, height: 24, filter: !project.link ? 'grayscale(100%) brightness(50%)' : 'none' }} />
                     }
                     
                 >
@@ -70,7 +68,7 @@ function ProjectCard({ project }) {
                     href={project.codelink || '#'}
                     disabled={!project.codelink}
                     target="_blank"
-                    startIcon={<img src={gitHubIcon} alt="GitHub" style={{ width: 24, height: 24, filter: !project.codelink ? 'grayscale(100%) brightness(50%)' : 'none' }} />}
+                    startIcon={<img src={'/assets/github-mark.svg'} alt="GitHub" style={{ width: 24, height: 24, filter: !project.codelink ? 'grayscale(100%) brightness(50%)' : 'none' }} />}
                 >
                     GitHub
                 </Button>
