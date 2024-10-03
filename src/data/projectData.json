@@ -1,7 +1,7 @@
 [
   {
       "title": "Wargaming Manager",
-      "imageUrl": "/src/assets/wargamemanager.png",
+      "imageUrl": "/assets/wargamemanager.png",
       "language": "PostgreSQL, Express, React, Node.js",
       "link": "",
       "codelink": "https://github.com/tenor2000/wargames-manager",
@@ -11,7 +11,7 @@
 
   {
     "title": "Weather Api App",
-    "imageUrl": "/src/assets/weather.png",
+    "imageUrl": "/assets/weather.png",
     "language": "HTML, JavaScript, CSS",
     "link": "https://tenor2000.github.io/weather-api-app/",
     "codelink": "https://github.com/tenor2000/weather-api-app",
@@ -20,7 +20,7 @@
   },
   {
     "title": "Memory Card Game",
-    "imageUrl": "/src/assets/memory.png",
+    "imageUrl": "/assets/memory.png",
     "language": "React, JavaScript, CSS",
     "link": "https://tenor2000.github.io/memory-cardgame/",
     "codelink": "https://github.com/tenor2000/memory-cardgame",
@@ -29,7 +29,7 @@
   },
   {
     "title": "Etch-a-Sketch",
-    "imageUrl": "/src/assets/etch.png",
+    "imageUrl": "/assets/etch.png",
     "language": "HTML, JavaScript, CSS",
     "link": "https://tenor2000.github.io/etch-a-sketch/",
     "codelink": "https://github.com/tenor2000/etch-a-sketch",

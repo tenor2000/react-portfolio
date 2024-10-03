@@ -30,7 +30,7 @@ const Header = () => {
         <Container maxWidth="lg">
             <Toolbar disableGutters>
                 <Box sx={{ display: { xs: 'none', md: 'flex' }, mr: 2, img: { height: 30, width: 'auto'}}}>
-                    <img src={'src/assets/grand-piano.svg'} alt={'piano-icon'} />
+                    <img src={'/assets/grand-piano.svg'} alt={'piano-icon'} />
                 </Box>
                 <Link to="Home" smooth={true} duration={500}>    
                     <Typography
@@ -98,7 +98,7 @@ const Header = () => {
                     </Menu>
                 </Box>
                 <Box sx={{ display: { xs: 'flex', md: 'none' }, margin: 1,img: { height: 30, width: 'auto'}}}>
-                    <img src={'src/assets/grand-piano.svg'} alt={'piano-icon'} />
+                    <img src={'/assets/grand-piano.svg'} alt={'piano-icon'} />
                 </Box>
                 <Link to="Home" smooth={true} duration={500}>
                     <Typography
