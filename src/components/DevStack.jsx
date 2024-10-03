@@ -1,21 +1,22 @@
 import React from 'react';
 import { Box, Paper, Typography } from '@mui/material';
+import devStackData from '../data/devStackData.json';
 
-const techIcons = [
-    'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg',
-    'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg',
-    'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg',
-    'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg',
-    'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original-wordmark.svg',
-    'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg',
-    'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg',
-    'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg',
-    'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg',
-    'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg',
 
-]
+// const techIcons = [
+//     'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg',
+//     'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg',
+//     'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg',
+//     'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg',
+//     'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original-wordmark.svg',
+//     'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg',
+//     'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg',
+//     'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg',
+//     'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg',
+//     'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg',
+// ]
 
-const TechStack = () => {
+const DevStack = () => {
     return (
         <Box
             className="animation-scroll"
@@ -32,7 +33,6 @@ const TechStack = () => {
         >
             <Box
                 sx={{
-                    background: 'rgba(0, 0, 0, 0.5)',
                     color: 'white',
                     padding: '10px',
                     borderRadius: '10px',
@@ -40,7 +40,11 @@ const TechStack = () => {
                     width: '100%',
                 }}
             >
-                <Typography variant="h4" component="h2" textAlign="center" >
+                <Typography variant="h4" component="h2" textAlign="center" 
+                    sx={{ textShadow: 
+                        '2px 2px 8px rgba(0, 0, 0, 0.6), -2px -2px 8px rgba(0, 0, 0, 0.6)'
+                    }}
+                >
                     Development Stack
                 </Typography>
             </Box>
@@ -56,7 +60,7 @@ const TechStack = () => {
                 }}    
             >
                 
-                {techIcons.map((icon, index) => (
+                {devStackData.map((devItem, index) => (
                     <Paper
                         key={index}
                         sx={{
@@ -75,7 +79,7 @@ const TechStack = () => {
                         }}
                     >
                         <Box
-                            tooltip={`Tech Icon ${index + 1}`}
+                            tooltip={devItem.name}
                             sx={{
                                 width: '100px',
                                 height: '100px',
@@ -94,7 +98,7 @@ const TechStack = () => {
                                 },
                             }}
                         >
-                            <img src={icon} alt={`Tech Icon ${index + 1}`} />
+                            <img src={devItem.link} alt={devItem.name} />
                         </Box>
                     </Paper>
                 ))}
@@ -104,4 +108,4 @@ const TechStack = () => {
     );
 };
 
-export default TechStack;
+export default DevStack;

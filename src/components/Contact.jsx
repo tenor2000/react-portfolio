@@ -1,8 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { Box, TextField, Button, Typography, Dialog, DialogActions, DialogContent, DialogTitle } from '@mui/material';
+import emailjs from '@emailjs/browser';
+
+// Keys for emailjs, safe to expose according to emailjs docs
+const serviceId = 'service_8klj9ow'
+const templateId = 'template_a8wwc9o'
+const publicKey = 'oUEUSvSEKQ1mpr8t0'
 
 const ContactModal = () => {
     const [open, setOpen] = useState(false);
+    const form = useRef();
 
     const handleClickOpen = () => {
         setOpen(true);
@@ -14,7 +21,18 @@ const ContactModal = () => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        // Handle form submission here
+        
+        emailjs.sendForm(serviceId, templateId, form.current, {
+            publicKey: publicKey,
+        })
+        .then(() => {
+                console.log('SUCCESS!');
+            },
+            (error) => {
+                console.log('FAILED...', error.text);
+            },
+        );
+
         handleClose();
     };
 
@@ -52,6 +70,7 @@ const ContactModal = () => {
                     </Typography>
                     <Box
                         component="form"
+                        ref={form}
                         onSubmit={handleSubmit}
                         sx={{ mt: '1rem', borderColor: 'primary.main' }}
                         noValidate
@@ -62,6 +81,7 @@ const ContactModal = () => {
                             fullWidth
                             required
                             id="name"
+                            name="name"
                             label="Name"
                             variant="outlined"
                             margin="normal"
@@ -70,6 +90,7 @@ const ContactModal = () => {
                             fullWidth
                             required
                             id="email"
+                            name="email"
                             label="Email"
                             type="email"
                             variant="outlined"
@@ -79,6 +100,7 @@ const ContactModal = () => {
                             fullWidth
                             required
                             id="message"
+                            name="message"
                             label="Message"
                             multiline
                             rows={4}
@@ -91,7 +113,7 @@ const ContactModal = () => {
                                 Cancel
                             </Button>
                             <Button type="submit" variant="outlined" color="primary">
-                                Send Message
+                                Send
                             </Button>
                         </DialogActions>
                     </Box>

@@ -14,7 +14,7 @@ import MenuItem from '@mui/material/MenuItem';
 const Header = () => {
     const [anchorElNav, setAnchorElNav] = useState(null);
 
-    const pages = ['DevStack', 'Projects', 'About', 'Resume', 'Contact', 'Blog'];
+    const pages = ['DevStack', 'Projects', 'About', 'Resume', 'Contact'];
   
     const handleOpenNavMenu = (event) => {
       setAnchorElNav(event.currentTarget);

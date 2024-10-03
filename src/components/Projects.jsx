@@ -26,7 +26,7 @@ const Projects = () => {
         >
             <Box
                 sx={{
-                    background: 'rgba(0, 0, 0, 0.7)',
+                    // background: 'rgba(0, 0, 0, 0.7)',
                     color: 'white',
                     padding: '10px',
                     borderRadius: '10px',
@@ -34,7 +34,11 @@ const Projects = () => {
                     width: '100%',
                 }}
             >
-                <Typography variant="h4" component="h2" textAlign="center" >
+                <Typography variant="h4" component="h2" textAlign="center" 
+                    sx={{ textShadow: 
+                        '2px 2px 8px rgba(0, 0, 0, 0.6), -2px -2px 8px rgba(0, 0, 0, 0.6)'
+                    }}
+                >
                     Featured Projects
                 </Typography>
             </Box>

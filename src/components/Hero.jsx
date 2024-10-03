@@ -21,16 +21,24 @@ const Hero = () => {
     >
       <Box sx={{ 
         padding: '0 20px',
-        backgroundColor: 'rgba(0, 0, 0, 0.5)',
-        '&:hover': { backgroundColor: 'rgba(0, 0, 0, 0.7)' },
+        // backgroundColor: 'rgba(0, 0, 0, 0.5)',
+        // '&:hover': { backgroundColor: 'rgba(0, 0, 0, 0.7)' },
         transition: 'background-color 0.3s ease',
         maxWidth: '700px',
         borderRadius: '10px' }}
       >
-        <Typography variant="h2" component="h1" gutterBottom>
-            Welcome to My Portfolio
+        <Typography variant="h2" component="h1" gutterBottom 
+          sx={{ textShadow: 
+            '2px 2px 8px rgba(0, 0, 0, .8), -2px -2px 8px rgba(0, 0, 0, 0.8)'
+          }}
+        >
+          Welcome to My Portfolio
         </Typography>
-        <Typography variant="h5" component="p" gutterBottom>
+        <Typography variant="h5" component="p" gutterBottom
+          sx={{ textShadow: 
+            '2px 2px 8px rgba(0, 0, 0, 0.8), -2px -2px 8px rgba(0, 0, 0, 0.8)'
+          }}
+        >
             I'm an aspiring Full Stack Developer passionate about building web applications to help shape the future.
         </Typography>
       </Box>

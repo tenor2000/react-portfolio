@@ -25,7 +25,7 @@ body {
 }
 
 .animation-scroll {
-  animation: appear 3s ;
+  animation: appear 5s ;
   animation-timeline: view();
   animation-range: entry 0;
 }

@@ -3,7 +3,7 @@ import { Element } from 'react-scroll'
 import TextField from '@mui/material/TextField'
 import Header from './components/Header'
 import Hero from './components/Hero'
-import TechStack from './components/TechStack'
+import DevStack from './components/DevStack'
 import Projects from './components/Projects'
 import About from './components/About'
 import Resume from './components/Resume'
@@ -48,7 +48,7 @@ function App() {
         <Hero/>
       </Element>
       <Element name="DevStack" >
-        <TechStack/>
+        <DevStack/>
       </Element>
       <Element name="Projects" >
         <Projects/>

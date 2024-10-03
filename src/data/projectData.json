@@ -1,56 +1,39 @@
 [
-    {
-        "title": "Wargaming Manager",
-        "imageUrl": "",
-        "language": "PostgreSQL, Express, React, Node.js",
-        "link": "",
-        "codelink": "https://github.com/tenor2000/wargames-manager",
-        "favor": false,
-        "description": "A warband and campaign currently developed using Frostgrave second edition, with additional expansion to other tabletop wargames. Built using components from Material UI, it features a full database, and a full API. The project is currently in development, and will be released in the near future."
-    },
-    {
-      "title": "Restaurant Page",
-      "imageUrl": "",
-      "language": "HTML, JavaScript, CSS",
-      "link": "https://tenor2000.github.io/restaurant-page/",
-      "codelink": "https://github.com/tenor2000/restaurant-page",
+  {
+      "title": "Wargaming Manager",
+      "imageUrl": "/src/assets/wargamemanager.png",
+      "language": "PostgreSQL, Express, React, Node.js",
+      "link": "",
+      "codelink": "https://github.com/tenor2000/wargames-manager",
       "favor": false,
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    },
-    {
-      "title": "Weather Api App",
-      "imageUrl": "/src/assets/weather.png",
-      "language": "HTML, JavaScript, CSS",
-      "link": "https://tenor2000.github.io/weather-api-app/",
-      "codelink": "https://github.com/tenor2000/weather-api-app",
-      "favor": false,
-      "description": "This weather app was made to learn using API calls in vanilla JavaScript and webpack. This is optimized for desktop."
-    },
-    {
-      "title": "Memory Card Game",
-      "imageUrl": "",
-      "language": "React, JavaScript, CSS",
-      "link": "https://tenor2000.github.io/memory-cardgame/",
-      "codelink": "https://github.com/tenor2000/memory-cardgame",
-      "favor": false,
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    },
-    {
-      "title": "Library App",
-      "imageUrl": "",
-      "language": "HTML, JavaScript, CSS",
-      "link": "https://tenor2000.github.io/library-app-js/",
-      "codelink": "https://github.com/tenor2000/library-app-js",
-      "favor": false,
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    },
-    {
-      "title": "Etch-a-Sketch",
-      "imageUrl": "/src/assets/etch.png",
-      "language": "HTML, JavaScript, CSS",
-      "link": "https://tenor2000.github.io/etch-a-sketch/",
-      "codelink": "https://github.com/tenor2000/etch-a-sketch",
-      "favor": false,
-      "description": "The Etch-a-Sketch app is a dynamic drawing tool created using JavaScript and CSS. Users can draw on a grid by clicking and dragging their mouse over the tiles, changing the background color as they go. The app includes features like resizing the grid, clearing the drawing area, and selecting different colors from a palette. Through building this project, I gained hands-on experience in event handling, DOM manipulation, and CSS styling, enhancing my skills in web development and interactive design."
-    }
-  ]
+      "description": "A warband and campaign currently developed using Frostgrave second edition, with additional expansion to other tabletop wargames. Built using components from Material UI, it features a full database, and a full API. The project is currently in development, and will be released in the near future."
+  },
+
+  {
+    "title": "Weather Api App",
+    "imageUrl": "/src/assets/weather.png",
+    "language": "HTML, JavaScript, CSS",
+    "link": "https://tenor2000.github.io/weather-api-app/",
+    "codelink": "https://github.com/tenor2000/weather-api-app",
+    "favor": false,
+    "description": "This weather app was made to learn using API calls in vanilla JavaScript and webpack. This is optimized for desktop."
+  },
+  {
+    "title": "Memory Card Game",
+    "imageUrl": "/src/assets/memory.png",
+    "language": "React, JavaScript, CSS",
+    "link": "https://tenor2000.github.io/memory-cardgame/",
+    "codelink": "https://github.com/tenor2000/memory-cardgame",
+    "favor": false,
+    "description": "This project involved learning React hooks and states. It connects to the free open-source PokeAPI."
+  },
+  {
+    "title": "Etch-a-Sketch",
+    "imageUrl": "/src/assets/etch.png",
+    "language": "HTML, JavaScript, CSS",
+    "link": "https://tenor2000.github.io/etch-a-sketch/",
+    "codelink": "https://github.com/tenor2000/etch-a-sketch",
+    "favor": false,
+    "description": "The Etch-a-Sketch app is a dynamic drawing tool created using JavaScript and CSS. Users can draw on a grid by clicking and dragging their mouse over the tiles, changing the background color as they go. The app includes features like resizing the grid, clearing the drawing area, and selecting different colors from a palette. Through building this project, I gained hands-on experience in event handling, DOM manipulation, and CSS styling, enhancing my skills in web development and interactive design."
+  }
+]

@@ -14,7 +14,6 @@ const Resume = () => {
                 minHeight: '100vh',
                 backgroundPosition: 'center',
                 color: '#fff',
-                textAlign: 'center',
                 padding: '0 20px' 
             }}
         >
