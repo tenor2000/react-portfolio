@@ -10,6 +10,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
+import PianoIcon from '../assets/grand-piano.svg';
 
 const Header = () => {
     const [anchorElNav, setAnchorElNav] = useState(null);
@@ -30,7 +31,7 @@ const Header = () => {
         <Container maxWidth="lg">
             <Toolbar disableGutters>
                 <Box sx={{ display: { xs: 'none', md: 'flex' }, mr: 2, img: { height: 30, width: 'auto'}}}>
-                    <img src={'/assets/grand-piano.svg'} alt={'piano-icon'} />
+                    <img src={PianoIcon} alt={'piano-icon'} />
                 </Box>
                 <Link to="Home" smooth={true} duration={500}>    
                     <Typography
@@ -98,7 +99,7 @@ const Header = () => {
                     </Menu>
                 </Box>
                 <Box sx={{ display: { xs: 'flex', md: 'none' }, margin: 1,img: { height: 30, width: 'auto'}}}>
-                    <img src={'/assets/grand-piano.svg'} alt={'piano-icon'} />
+                    <img src={PianoIcon} alt={'piano-icon'} />
                 </Box>
                 <Link to="Home" smooth={true} duration={500}>
                     <Typography

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Box, Typography, Card, CardContent, CardMedia, Button, useMediaQuery, IconButton } from '@mui/material';
-
+import GithubIcon from '../assets/github-mark.svg';
+import NewTabIcon from '../assets/new-tab-svgrepo-com.svg';
 
 function ProjectCard({ project }) {
     const isMobile = useMediaQuery('(max-height: 600px)');
@@ -29,7 +30,7 @@ function ProjectCard({ project }) {
             <CardMedia
                 component="img"
                 height={height * 0.4}
-                image={project.imageUrl}
+                image={`${import.meta.env.BASE_URL}${project.imageUrl}`}
                 alt={project.title}
             />
             <CardContent sx={{ flex: 1, textAlign: 'center', display: 'flex', flexDirection: 'column', justifyContent: 'flex-start', overflow: 'hidden', pb: 1 }}>
@@ -54,7 +55,7 @@ function ProjectCard({ project }) {
                     disabled={!project.link}
                     target="_blank"
                     startIcon={
-                        <img src={'/assets/new-tab-svgrepo-com.svg'} alt="New Tab" style={{ width: 24, height: 24, filter: !project.link ? 'grayscale(100%) brightness(50%)' : 'none' }} />
+                        <img src={NewTabIcon} alt="New Tab" style={{ width: 24, height: 24, filter: !project.link ? 'grayscale(100%) brightness(50%)' : 'none' }} />
                     }
                     
                 >
@@ -68,7 +69,7 @@ function ProjectCard({ project }) {
                     href={project.codelink || '#'}
                     disabled={!project.codelink}
                     target="_blank"
-                    startIcon={<img src={'/assets/github-mark.svg'} alt="GitHub" style={{ width: 24, height: 24, filter: !project.codelink ? 'grayscale(100%) brightness(50%)' : 'none' }} />}
+                    startIcon={<img src={GithubIcon} alt="GitHub" style={{ width: 24, height: 24, filter: !project.codelink ? 'grayscale(100%) brightness(50%)' : 'none' }} />}
                 >
                     GitHub
                 </Button>
