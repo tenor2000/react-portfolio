@@ -2,20 +2,6 @@ import React from 'react';
 import { Box, Paper, Typography } from '@mui/material';
 import devStackData from '../data/devStackData.json';
 
-
-// const techIcons = [
-//     'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg',
-//     'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg',
-//     'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg',
-//     'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg',
-//     'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original-wordmark.svg',
-//     'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg',
-//     'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg',
-//     'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg',
-//     'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg',
-//     'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg',
-// ]
-
 const DevStack = () => {
     return (
         <Box
@@ -80,6 +66,10 @@ const DevStack = () => {
                     >
                         <Box
                             tooltip={devItem.name}
+                            component="a"
+                            href={devItem.link}
+                            target="_blank"
+                            rel="noopener"
                             sx={{
                                 width: '100px',
                                 height: '100px',
@@ -98,7 +88,7 @@ const DevStack = () => {
                                 },
                             }}
                         >
-                            <img src={devItem.link} alt={devItem.name} />
+                            <img src={devItem.iconLink} alt={devItem.name} />
                         </Box>
                     </Paper>
                 ))}
