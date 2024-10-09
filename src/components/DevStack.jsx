@@ -52,7 +52,6 @@ const DevStack = () => {
                         sx={{
                             backgroundColor: 'primary.main',
                             borderRadius: '10px',
-
                             display: 'flex',
                             alignItems: 'center',
                             justifyContent: 'center',
@@ -60,8 +59,8 @@ const DevStack = () => {
                             '&:hover': {
                                 backgroundColor: '#f5f5f5',
                                 transition: 'background-color 0.3s ease',
-                                
                             },
+                            border: '1px solid rgba(255, 255, 255, 0.5)',
                         }}
                     >
                         <Box
