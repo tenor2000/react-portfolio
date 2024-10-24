@@ -9,7 +9,6 @@ import ContactModal from "./sections/Contact";
 import Footer from "./sections/Footer";
 import { ThemeProvider } from "@mui/material/styles";
 import theme from "./components/Theme";
-import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
 function App() {
   return (
