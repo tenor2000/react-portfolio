@@ -19,19 +19,29 @@ body {
   background-color: #242424;
   background-image: url("https://backiee.com/static/wpdb/wallpapers/v2/3840x2160/346787.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: top center;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
+.nav-link {
+  color: lightblue;
+  cursor: pointer;
+  transition: color 0.7s ease, text-decoration 0.7s ease;
+}
+
+.nav-active {
+  color: rgb(89, 89, 222);
+}
+
 .animation-scroll {
-  animation: appear 5s ;
+  animation: appear 5s;
   animation-timeline: view();
   animation-range: entry 0;
 }
 
 .animation-appear {
-  animation: appear 3s ;
+  animation: appear 3s;
 }
 
 @keyframes appear {

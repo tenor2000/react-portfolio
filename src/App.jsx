@@ -1,70 +1,41 @@
-import { useState } from 'react'
-import { Element } from 'react-scroll'
-import TextField from '@mui/material/TextField'
-import Header from './components/Header'
-import Hero from './components/Hero'
-import DevStack from './components/DevStack'
-import Projects from './components/Projects'
-import About from './components/About'
-import Resume from './components/Resume'
-import ContactModal from './components/Contact';
-import Footer from './components/Footer'
-import { createTheme, ThemeProvider } from '@mui/material/styles';
-
-const theme = createTheme({
-  components: {
-    MuiTextField: {
-      styleOverrides: {
-        root: {
-          '& .MuiOutlinedInput-root': {
-            color: 'white',  
-            '& .MuiOutlinedInput-notchedOutline': {
-              borderColor: 'gray', 
-            },
-            '&:hover .MuiOutlinedInput-notchedOutline': {
-              borderColor: 'lightgray',
-            },
-            '&.Mui-focused .MuiOutlinedInput-notchedOutline': {
-              borderColor: 'gray',
-            },
-          },
-          '& .MuiInputLabel-root': {
-            color: 'white',
-            '&.Mui-focused': {
-              color: 'white'
-            },
-          },
-        },
-      },
-    },
-  },
-});
+import { Element } from "react-scroll";
+import Header from "./sections/Header";
+import Hero from "./sections/Hero";
+import DevStack from "./sections/DevStack";
+import Projects from "./sections/Projects";
+import About from "./sections/About";
+import Resume from "./sections/Resume";
+import ContactModal from "./sections/Contact";
+import Footer from "./sections/Footer";
+import { ThemeProvider } from "@mui/material/styles";
+import theme from "./components/Theme";
+import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <Header/>
-      <Element name="Home" >
-        <Hero/>
+      <Header />
+      <Element name="Home">
+        <Hero />
       </Element>
-      <Element name="DevStack" >
-        <DevStack/>
+      <Element name="DevStack">
+        <DevStack />
       </Element>
-      <Element name="Projects" >
-        <Projects/>
+      <Element name="Projects">
+        <Projects />
       </Element>
-      <Element name="About" >
-        <About/>
+      <Element name="About">
+        <About />
       </Element>
-      <Element name="Resume" >
-        <Resume/>
+      <Element name="Resume">
+        <Resume />
       </Element>
       <Element name="Contact">
-        <ContactModal/>
+        <ContactModal />
       </Element>
       <Footer />
     </ThemeProvider>
-  )
+  );
 }
 
-export default App
+export default App;
