@@ -5,17 +5,17 @@ import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
-import Menu from "@mui/material/Menu";
+import Drawer from "@mui/material/Drawer";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
-import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import PianoIcon from "../assets/grand-piano.svg";
 import { headerText } from "../data/sectionTexts";
+import Icon from "@mui/material/Icon";
 
 const Header = () => {
-  const [anchorElNav, setAnchorElNav] = useState(null);
   const [hasScrolled, setHasScrolled] = useState(false);
+  const [drawerOpen, setDrawerOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -29,14 +29,16 @@ const Header = () => {
     };
   }, []);
 
-  const pages = ["DevStack", "Projects", "About", "Resume", "Contact"];
+  const pages = [
+    { name: "DevStack", iconUrl: "" },
+    { name: "Projects", iconUrl: "" },
+    { name: "About", iconUrl: "" },
+    { name: "Resume", iconUrl: "" },
+    { name: "Contact", iconUrl: "" },
+  ];
 
-  const handleOpenNavMenu = (event) => {
-    setAnchorElNav(event.currentTarget);
-  };
-
-  const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
+  const handleToggleDrawer = () => {
+    setDrawerOpen(!drawerOpen);
   };
 
   return (
@@ -64,63 +66,100 @@ const Header = () => {
               height: "inherit",
             }}
           >
-            <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+            <Box
+              sx={{
+                flexGrow: 1,
+                display: { xs: "flex", md: "none" },
+              }}
+            >
               <IconButton
                 size="large"
                 aria-label="navigation menu"
                 aria-controls="menu-appbar"
                 aria-haspopup="true"
-                onClick={handleOpenNavMenu}
+                onClick={handleToggleDrawer}
                 color="inherit"
               >
                 <MenuIcon />
               </IconButton>
-              <Menu
-                id="menu-appbar"
-                anchorEl={anchorElNav}
-                anchorOrigin={{
-                  vertical: "bottom",
-                  horizontal: "left",
-                }}
-                keepMounted
-                transformOrigin={{
-                  vertical: "top",
-                  horizontal: "left",
-                }}
-                open={Boolean(anchorElNav)}
-                onClose={handleCloseNavMenu}
+              <Drawer
+                anchor="left"
+                open={drawerOpen}
+                onClose={handleToggleDrawer}
                 sx={{
-                  display: { xs: "block", md: "none" },
-                }}
-                slotProps={{
-                  paper: {
-                    sx: {
-                      backgroundColor: "rgba(0, 0, 0, 0.8)",
-                      color: "primary.main",
-                    },
+                  width: "100vw",
+                  height: "100vh",
+                  "& .MuiDrawer-paper": {
+                    backgroundColor: "rgba(0, 0, 0, 0.8)",
+                    color: "primary.main",
                   },
                 }}
               >
-                <Link to="Home" smooth={true} duration={500}>
-                  <MenuItem onClick={handleCloseNavMenu}>
-                    <Typography textAlign="center" textTransform={"uppercase"}>
-                      Home
-                    </Typography>
-                  </MenuItem>
-                </Link>
-                {pages.map((page) => (
-                  <Link key={page} to={page} smooth={true} duration={500}>
-                    <MenuItem onClick={handleCloseNavMenu}>
+                <Box
+                  onClick={handleToggleDrawer}
+                  onKeyDown={handleToggleDrawer}
+                  sx={{
+                    display: "flex",
+                    alignItems: "left",
+                    flexDirection: "column",
+                    width: "full",
+                    height: "100%",
+                    gap: 3,
+                    padding: 3,
+                    backgroundColor: "rgba(0, 0, 0, 0.8)",
+                  }}
+                >
+                  <Link to="Home" smooth={true} duration={500}>
+                    <MenuItem onClick={handleToggleDrawer}>
                       <Typography
                         textAlign="center"
                         textTransform={"uppercase"}
+                        variant="h4"
+                        sx={{
+                          color: "primary.main",
+                          ":after": {
+                            content: "''",
+                            display: "block",
+                            width: "full",
+                            height: "2px",
+                            backgroundColor: "primary.main",
+                            marginBottom: "10px",
+                          },
+                        }}
                       >
-                        {page}
+                        Home
                       </Typography>
                     </MenuItem>
                   </Link>
-                ))}
-              </Menu>
+                  {pages.map((page) => (
+                    <Link
+                      key={page.name}
+                      to={page.name}
+                      smooth={true}
+                      duration={500}
+                    >
+                      <MenuItem onClick={handleToggleDrawer}>
+                        <Typography
+                          variant="h5"
+                          textAlign="center"
+                          textTransform={"uppercase"}
+                        >
+                          {/* <img
+                            src={page.iconUrl}
+                            style={{
+                              height: 30,
+                              width: "auto",
+                              marginRight: 10,
+                            }}
+                          /> */}
+                          <Icon>-</Icon>
+                          {page.name}
+                        </Typography>
+                      </MenuItem>
+                    </Link>
+                  ))}
+                </Box>
+              </Drawer>
             </Box>
 
             <Box
@@ -181,9 +220,8 @@ const Header = () => {
               {pages.map((page) => (
                 <Box sx={{ display: { xs: "none", md: "flex" } }}>
                   <Link
-                    key={page}
-                    onClick={handleCloseNavMenu}
-                    to={page}
+                    key={page.name}
+                    to={page.name}
                     spy
                     smooth
                     activeClass="nav-active"
@@ -193,7 +231,7 @@ const Header = () => {
                       textTransform: "uppercase",
                     }}
                   >
-                    {page}
+                    {page.name}
                   </Link>
                 </Box>
               ))}

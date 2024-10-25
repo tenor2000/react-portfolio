@@ -24,10 +24,20 @@ body {
   background-attachment: fixed;
 }
 
+@media (max-width: 768px) {
+  body {
+    background-image: url("https://backiee.com/static/wallpapers/portrait/1215x2160/346787.jpg");
+  }
+}
+
 .nav-link {
   color: lightblue;
   cursor: pointer;
-  transition: color 0.7s ease, text-decoration 0.7s ease;
+  transition: color 0.7s ease;
+}
+
+.nav-link:hover {
+  color: lightgreen;
 }
 
 .nav-active {
