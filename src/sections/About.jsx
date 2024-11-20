@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Typography, Avatar } from "@mui/material";
-import { aboutTextBody, aboutTextTitle } from "../data/sectionTexts";
+import { aboutTextBody, aboutTextTitle } from "../constants/sectionTexts";
 
 const About = () => {
   return (

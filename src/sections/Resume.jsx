@@ -39,8 +39,21 @@ const Resume = () => {
             width: "100%",
           }}
         >
-          <Button>View</Button>
-          <Button>Download</Button>
+          <Button
+            component="a"
+            href="/react-portfolio/gj-resume-2024-soft-dev.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View
+          </Button>
+          <Button
+            component="a"
+            href="/react-portfolio/gj-resume-2024-soft-dev.pdf"
+            download="gj-resume-2024-soft-dev.pdf"
+          >
+            Download
+          </Button>
         </Box>
       </Box>
     </section>

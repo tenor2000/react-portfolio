@@ -10,7 +10,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import MenuItem from "@mui/material/MenuItem";
 import PianoIcon from "../assets/grand-piano.svg";
-import { headerText } from "../data/sectionTexts";
+import { headerText } from "../constants/sectionTexts";
 import Icon from "@mui/material/Icon";
 
 const Header = () => {
@@ -218,9 +218,11 @@ const Header = () => {
                 </Link>
               </Box>
               {pages.map((page) => (
-                <Box sx={{ display: { xs: "none", md: "flex" } }}>
+                <Box
+                  key={page.name}
+                  sx={{ display: { xs: "none", md: "flex" } }}
+                >
                   <Link
-                    key={page.name}
                     to={page.name}
                     spy
                     smooth

@@ -1,16 +1,16 @@
 [
   {
-      "title": "Wargaming Manager",
-      "imageUrl": "/assets/wargamemanager.png",
-      "language": "PostgreSQL, Express, React, Node.js",
-      "link": "",
-      "codelink": "https://github.com/tenor2000/wargames-manager",
-      "favor": false,
-      "description": "A warband and campaign currently developed using Frostgrave second edition, with additional expansion to other tabletop wargames. Built using components from Material UI, it features a full database, and a full API. The project is currently in development, and will be released in the near future."
+    "title": "Wargaming Manager",
+    "imageUrl": "/assets/wargamemanager.png",
+    "language": "PostgreSQL, Express, React, Node.js",
+    "link": "",
+    "codelink": "https://github.com/tenor2000/wargames-manager",
+    "favor": false,
+    "description": "This is a WIP. A warband and campaign currently developed using Frostgrave second edition, with additional expansion to other tabletop wargames. Built using components from Material UI, it features a full database, and a full API. The project is currently in development, and will be released in the near future."
   },
 
   {
-    "title": "Weather Api App",
+    "title": "Weather API App",
     "imageUrl": "/assets/weather.png",
     "language": "HTML, JavaScript, CSS",
     "link": "https://tenor2000.github.io/weather-api-app/",

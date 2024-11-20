@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Typography, Button } from "@mui/material";
 import { Link } from "react-scroll";
-import { heroTextBody, heroTextTitle } from "../data/sectionTexts";
+import { heroTextBody, heroTextTitle } from "../constants/sectionTexts";
 
 const Hero = () => {
   return (
@@ -51,9 +51,20 @@ const Hero = () => {
             {heroTextBody}
           </Typography>
         </Box>
-        <Link to="Projects" smooth={true} duration={500}>
-          <Button>View My Work</Button>
-        </Link>
+        <Box
+          sx={{
+            display: "flex",
+            gap: 2,
+            marginBottom: "20px",
+          }}
+        >
+          <Link to="Projects" smooth={true} duration={500}>
+            <Button>View My Work</Button>
+          </Link>
+          <Link to="Contact" smooth={true} duration={500}>
+            <Button>Contact</Button>
+          </Link>
+        </Box>
       </Box>
     </section>
   );

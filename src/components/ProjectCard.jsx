@@ -46,7 +46,7 @@ function ProjectCard({ project }) {
           height={height * 0.4}
           image={`${import.meta.env.BASE_URL}${project.imageUrl}`}
           alt={project.title}
-          sx={{ objectFit: "cover", borderRadius: "10px", margin: "10px" }}
+          sx={{ objectFit: "cover", borderRadius: "10px" }}
         />
       </Box>
       <CardContent

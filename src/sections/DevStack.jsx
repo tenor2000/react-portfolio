@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Paper, Typography } from "@mui/material";
-import devStackData from "../data/devStackData.json";
+import devStackData from "../constants/devStackData.json";
 
 const DevStack = () => {
   return (
@@ -84,6 +84,7 @@ const DevStack = () => {
                   height: "100%",
                   objectFit: "contain",
                   transition: "transform 0.3s ease",
+                  borderRadius: "10px",
                   "&:hover": {
                     transform: "scale(1.2)",
                   },

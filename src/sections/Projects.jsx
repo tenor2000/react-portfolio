@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
 import ProjectCard from "../components/ProjectCard";
-import projects from "../data/projectData.json";
+import projects from "../constants/projectData.json";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, A11y } from "swiper/modules";
 import "swiper/css";
