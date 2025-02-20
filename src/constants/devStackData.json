@@ -64,5 +64,11 @@
     "iconLink": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
     "wordmark": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-plain-wordmark.svg",
     "link": "https://tailwindcss.com/"
+  },
+  {
+    "name": "Bootstrap",
+    "iconLink": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg",
+    "wordmark": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original-wordmark.svg",
+    "link": "https://getbootstrap.com/"
   }
 ]
