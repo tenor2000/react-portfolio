@@ -1,10 +1,19 @@
 [
   {
-    "title": "Wargaming Manager",
+   "title": "Frostgrave API",
+    "imageUrl": "/assets/fgapi.png",
+    "language": "MongoDB/Mongoose, Express, Node.js",
+    "link": "https://frostgrave-api.onrender.com/",
+    "codelink": "https://github.com/tenor2000/Frostgrave-API",
+    "favor": false,
+    "description": "This is a RESTful API for Frostgrave, a tabletop wargame. It allows users to manage warbands, campaigns, and other game-related data. The API is built using Node.js, Express, and MongoDB, providing endpoints for CRUD operations on warbands and campaigns. It includes features like user authentication and data validation."
+  },
+  {
+    "title": "Frostgrave Manager",
     "imageUrl": "/assets/wargamemanager.png",
-    "language": "PostgreSQL, Express, React, Node.js",
+    "language": "MongoDB, Express, React, Node.js",
     "link": "",
-    "codelink": "https://github.com/tenor2000/wargames-manager",
+    "codelink": "https://github.com/tenor2000/FrostgraveApp",
     "favor": false,
     "description": "This is a WIP. A warband and campaign currently developed using Frostgrave second edition, with additional expansion to other tabletop wargames. Built using components from Material UI, it features a full database, and a full API. The project is currently in development, and will be released in the near future."
   },

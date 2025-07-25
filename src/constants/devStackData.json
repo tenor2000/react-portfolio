@@ -12,6 +12,12 @@
     "link": "https://www.javascript.com/"
   },
   {
+    "name": "TypeScript",
+    "iconLink": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+    "wordmark": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+    "link": "https://www.typescriptlang.org/"
+  },
+  {
     "name": "React",
     "iconLink": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
     "wordmark": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg",
@@ -52,6 +58,12 @@
     "iconLink": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg",
     "wordmark": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg",
     "link": "https://www.mysql.com/"
+  },
+  {
+    "name": "MongoDB",
+    "iconLink": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
+    "wordmark": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg",
+    "link": "https://www.mongodb.com/"
   },
   {
     "name": "GitHub",
