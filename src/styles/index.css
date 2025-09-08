@@ -19,7 +19,7 @@ body {
   align-content: center;
   min-height: 100vh;
   background-color: #242424;
-  background-image: url("https://backiee.com/static/wallpapers/3840x2160/197425.jpg");
+  background-image: url("https://backiee.com/static/wallpapers/3840x2160/346787.jpg");
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
@@ -28,7 +28,7 @@ body {
 
 @media (max-width: 768px) {
   body {
-    background-image: url("https://backiee.com/static/wallpapers/1000x563/197425.jpg");
+    background-image: url("https://backiee.com/static/wallpapers/1000x563/346787.jpg");
   }
 }
 
