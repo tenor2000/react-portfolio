@@ -17,7 +17,15 @@
     "favor": false,
     "description": "This is a WIP. A warband and campaign currently developed using Frostgrave second edition, with additional expansion to other tabletop wargames. Built using components from Material UI, it features a full database, and a full API. The project is currently in development, and will be released in the near future."
   },
-
+  {
+    "title": "Stock Quote App",
+    "imageUrl": "/assets/stockapp.png",
+    "language": "HTML, JavaScript, CSS",
+    "link": "https://stock-ticker-rho.vercel.app/",
+    "codelink": "https://github.com/tenor2000/SBA308A",
+    "favor": false,
+    "description": "This stock app was made to learn using API calls in vanilla JavaScript and vite. This is optimized for desktop."
+  },
   {
     "title": "Weather API App",
     "imageUrl": "/assets/weather.png",
